@@ -1,0 +1,14 @@
+{
+  "name": "auth-validator-assignment",
+  "version": "1.0.0",
+  "description": "Assignment: user auth validator + tests + CI",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha test.js --exit"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  },
+  "author": "",
+  "license": "MIT"
+}
