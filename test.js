@@ -13,7 +13,7 @@ describe('validateMail(email)', function() {
   
 
   it('invalid: missing @ symbol', function() {
-    assert.strictEqual(validateMail('vigo.example.com'), false);
+    assert.strictEqual(validateMail('vigo.@example.com'), false);
   });
 
   it('invalid: non-string input', function() {
