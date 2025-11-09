@@ -20,10 +20,10 @@ describe('validateMail(email)', function() {
     assert.strictEqual(validateMail(12345), false);
   });
 
-  // ❌ Intentionally failing test (commented out)
-  // it('break: intentionally expecting wrong output (intentional fail)', function() {
-  //   assert.strictEqual(validateMail('invalid-email-without-at'), true);
-  // });
+ 
+  it('break: intentionally expecting wrong output (intentional fail)', function() {
+     assert.strictEqual(validateMail('invalid-email-without-at'), true);
+  });
 });
 
 describe('validatePassword(password)', function() {
@@ -44,8 +44,8 @@ describe('validatePassword(password)', function() {
     assert.strictEqual(validatePassword('alllowercase1'), false);
   });
 
-  // ❌ Intentionally failing test (commented out)
-  // it('break: intentionally expecting wrong output for weak password', function() {
-  //   assert.strictEqual(validatePassword('weak1'), true);
-  // });
+  
+   it('break: intentionally expecting wrong output for weak password', function() {
+     assert.strictEqual(validatePassword('weak1'), true);
+   });
 });

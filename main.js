@@ -1,8 +1,13 @@
 function validateMail(email) {
   if (typeof email !== 'string') return false;
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return re.test(email.trim());
+
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (email.split('@')[0].endsWith('.')) return false;
+
+  return regex.test(email);
 }
+
 
 function validatePassword(password) {
   if (typeof password !== 'string') return false;
