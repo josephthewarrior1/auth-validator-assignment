@@ -8,8 +8,9 @@ describe('validateMail(email)', function() {
   });
 
   it('valid: email with subdomain', function() {
-    assert.strictEqual(validateMail('gareth.example.com'), true);
+    assert.strictEqual(validateMail('gareth@mail.example.com'), true);
   });
+  
 
   it('invalid: missing @ symbol', function() {
     assert.strictEqual(validateMail('vigo.example.com'), false);
